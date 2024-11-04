@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detección de fatiga muscular</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Simulación de Detección de Fatiga Muscular</h2>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required>
+        
+        <label for="genero">Género (m/f):</label>
+        <input type="text" id="genero" required>
+        
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" required>
+        
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura" required>
+        
+        <label for="frecuencia">Frecuencia Cardiaca (lpm):</label>
+        <input type="number" id="frecuencia" required>
+        
+        <label for="actividad">Nivel de Actividad (1-5):</label>
+        <input type="number" id="actividad" required>
+        
+        <label for="tiempo">Tiempo de Ejercicio (min):</label>
+        <input type="number" id="tiempo" required>
+        
+        <label for="fatiga">Índice de Fatiga (0-10):</label>
+        <input type="number" id="fatiga" required>
+        
+        <button onclick="enviarDatos()">Detectar Fatiga</button>
+        <div class="result" id="resultado"></div>
+    </div>
+</body>
+<script src="assets/js/main.js"></script>
+</html>
