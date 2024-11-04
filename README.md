@@ -5,6 +5,7 @@
 - Flask
 - pandas
 - scikit-learn
+- flask-cors
 
 ## Ejecución del servidor
 Para iniciar la aplicacion, ejecuta
