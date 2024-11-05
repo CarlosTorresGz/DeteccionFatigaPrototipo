@@ -12,7 +12,7 @@ data['Genero'] = data['Genero'].str.strip().str.lower()
 data['Genero'] = data['Genero'].map({'m': 0, 'f': 1})
 
 # Definir características y etiquetas
-X = data[['Edad', 'Genero', 'Peso (kg)', 'Altura (cm)', 'Frecuencia Cardiaca (lpm)', 'Nivel de Actividad (1-5)', 'Tiempo de Ejercicio (min)', 'Indice de Fatiga (0-10)']]
+X = data[['Edad', 'Genero', 'Peso (kg)', 'Altura (cm)', 'Frecuencia Cardiaca (lpm)', 'Nivel de Actividad (1-5)', 'Tiempo de Ejercicio (min)']]
 y = data['Resultado (Fatiga: Si/No)']
 
 # Dividir en conjuntos de entrenamiento y pruebas
@@ -37,12 +37,11 @@ print(f'Precisión del modelo: {accuracy:.2f}')
 nuevo_dato = {
     'Edad': [30],
     'Genero': ['m'],
-    'Peso (kg)': [70],
+    'Peso (kg)': [80],
     'Altura (cm)': [175],
-    'Frecuencia Cardiaca (lpm)': [101],
-    'Nivel de Actividad (1-5)': [3],
-    'Tiempo de Ejercicio (min)': [50],
-    'Indice de Fatiga (0-10)': [7]
+    'Frecuencia Cardiaca (lpm)': [131],
+    'Nivel de Actividad (1-5)': [4],
+    'Tiempo de Ejercicio (min)': [60]
 }
 
 nuevo_dato_df = pd.DataFrame(nuevo_dato)

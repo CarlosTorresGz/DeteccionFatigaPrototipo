@@ -6,8 +6,7 @@ async function enviarDatos() {
         'Altura (cm)': document.getElementById('altura').value,
         'Frecuencia Cardiaca (lpm)': document.getElementById('frecuencia').value,
         'Nivel de Actividad (1-5)': document.getElementById('actividad').value,
-        'Tiempo de Ejercicio (min)': document.getElementById('tiempo').value,
-        'Indice de Fatiga (0-10)': document.getElementById('fatiga').value
+        'Tiempo de Ejercicio (min)': document.getElementById('tiempo').value
     };
 
     const respuesta = await fetch('http://127.0.0.1:5000/predict', {
