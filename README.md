@@ -9,9 +9,8 @@
 
 ## Ejecución del servidor
 Para iniciar la aplicacion, ejecuta
-```
 python app.py
-´´´
+
 
 La aplicación está disponible en http://127.0.0.1:5000/webapp/index.html
 
