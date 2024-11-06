@@ -9,8 +9,9 @@
 
 ## Ejecución del servidor
 Para iniciar la aplicacion, ejecuta
-```bash
-python app.py ```
+```
+python app.py
+´´´
 
 La aplicación está disponible en http://127.0.0.1:5000/webapp/index.html
 
@@ -18,4 +19,5 @@ La aplicación está disponible en http://127.0.0.1:5000/webapp/index.html
 Ejecuta primero que nada el siguiente comando para instalar las dependencias:
 ```bash
 pip install -r requirements.txt
+
 
