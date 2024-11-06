@@ -11,7 +11,7 @@
 Para iniciar la aplicacion, ejecuta
 python app.py
 
-La aplicación está disponible en http://127.0.0.1:5000/
+La aplicación está disponible en http://127.0.0.1:5000/webapp/index.html
 
 ## Instalación de dependencias
 Ejecuta primero que nada el siguiente comando para instalar las dependencias:
