@@ -26,6 +26,8 @@ margin-top: 20px;
 font-weight: bold; 
 }
 
+/* Barra de progreso */
+
 .progress-bar-container {
     width: 100%;
     background-color: #f3f3f3;
@@ -38,4 +40,26 @@ font-weight: bold;
     width: 0%;
     background-color: #4caf50;
     transition: width 0.5s;
+}
+
+/* ícono y recomendaciones */
+
+.recomendacion-container {
+    width: 25%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.recomendacion-icono {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.recomendacion-texto {
+    font-size: 1rem;
+    color: #333;
 }

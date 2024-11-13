@@ -48,7 +48,24 @@ async function enviarDatos() {
             progressBar.style.backgroundColor = "orange";
         } else {
             progressBar.style.backgroundColor = "green";
-        }       
+        } 
+        
+        // ícono y recomendaciones
+        let mensajeRecomendacion = "";
+        let iconoRecomendacion = "";
+        if (porcentajeFatiga <= 40) {
+            mensajeRecomendacion = "Nivel de fatiga óptimo: continúe sin preocupaciones.";
+            iconoRecomendacion = '<i class="fas fa-smile" style="color: green;"></i>';
+        } else if (porcentajeFatiga <= 70) {
+            mensajeRecomendacion = "Nivel de fatiga moderado: considere una pausa.";
+            iconoRecomendacion = '<i class="fas fa-meh" style="color: orange;"></i>';
+        } else {
+            mensajeRecomendacion = "Nivel de fatiga alto: se recomienda descanso de 10 minutos.";
+            iconoRecomendacion = '<i class="fas fa-tired" style="color: red;"></i>';
+        }
+        
+        document.getElementById("recomendacion-texto").textContent = mensajeRecomendacion;
+        document.getElementById("recomendacion-icono").innerHTML = iconoRecomendacion;
 
     } catch (error) {
         console.error("Error en la solicitud:", error);
