@@ -1,35 +1,111 @@
 body { 
-font-family: Arial, sans-serif;
+    font-family: "Afacad Flux", sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background-color: #262626;
+    color: white;
  }
+
+.left-column {
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
  
+.profile {
+    width: 100%;
+    margin-bottom: 2%;
+    font-size: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #4B5358;
+    border-radius: 2%;
+}
+
+.profile p{
+    margin-left: 32%;
+}
+
+.section-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.profilephoto img{
+    transform: translate(150%, 3%);
+    width: 25%;
+}
+
 .container { 
-max-width: 500px;
-margin: auto;
-padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    width: 88%;
+    height: 45%;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #4B5358;
+    border-radius: 2%;
+}
+
+.container label {
+    display: block;
+}
+
+.container h3 {
+    margin-top: -2%;
 }
 
 input { 
-margin-bottom: 10px; 
-width: 100%; 
-padding: 8px; }
+    margin-bottom: 10px; 
+    background-color: #4B5358;
+    color: white;
+    width: 55%; 
+    height: 5%;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
 
 button { 
-padding: 10px 20px; 
-background-color: #4CAF50; 
-color: white; 
-border: none; 
-cursor: pointer; 
+    width: 50%;
+    padding: 10px 20px;
+    font-size: 10px;
+    background-color: #9E7B9B;
+    color: white; 
+    border: none; 
+    cursor: pointer; 
 }
 
 .result {
-margin-top: 20px; 
-font-weight: bold; 
+    margin-top: 4%;
+    font-weight: bold; 
+}
+
+/* contenedor de la derecha */
+.right-column {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los contenedores */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 2%;
+    background-color: #4B5358;
+    padding: 1%;
 }
 
 /* Barra de progreso */
 
 .progress-bar-container {
-    width: 100%;
+    width: 70%;
+    height: 3%;
+    margin: auto;
+    margin-top: -0.5%;
     background-color: #f3f3f3;
     border-radius: 10px;
     overflow: hidden;
@@ -42,15 +118,21 @@ font-weight: bold;
     transition: width 0.5s;
 }
 
+#fatigue-level-text {
+    margin: auto;
+    margin-top: 0.5%;
+}
+
 /* ícono y recomendaciones */
 
 .recomendacion-container {
     width: 25%;
     margin: 0 auto;
+    margin-top: 0.5%;
     padding: 20px;
-    background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #313638;
     text-align: center;
 }
 
@@ -61,5 +143,71 @@ font-weight: bold;
 
 .recomendacion-texto {
     font-size: 1rem;
+    color: white;
+}
+
+/* marcador circular */ 
+
+.marcador-circular-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.marcador-circular {
+    width: 150px;
+    height: 150px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 50%;
+    background: conic-gradient(#4caf50 0%, #4caf50 0%, #f3f3f3 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: width 0.5s;
+}
+
+.marcador-circular span {
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: bold;
     color: #333;
+}
+
+/* contenedor del médico */
+
+.title-section {
+    margin-top: 1%;
+}
+
+.medic-container {
+    width: 30%;
+    height: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #313638;
+    border-radius: 2%;
+    margin: 0 auto;
+}
+
+.medic-container img {
+    width: 48%;
+    border-radius: 2%;
+    margin-top: -10%;
+}
+
+.send-btn {
+    width: 55%;
+    margin-top: -7%;
+    margin-bottom: 6%;
+    background-color: #9E7B9B;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
 }

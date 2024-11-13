@@ -7,48 +7,75 @@
     <script src="https://kit.fontawesome.com/30d262e490.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMIa3zgjOmQ9zzEy9Uj6U1T9jkfTtsJxR9EV6wZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
 </head>
 </head>
 <body>
-    <div class="container">
-        <h2>Simulación de Detección de Fatiga Muscular</h2>
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" required>
-        
-        <label for="genero">Género (m/f):</label>
-        <input type="text" id="genero" required>
-        
-        <label for="peso">Peso (kg):</label>
-        <input type="number" id="peso" required>
-        
-        <label for="altura">Altura (cm):</label>
-        <input type="number" id="altura" required>
-        
-        <label for="frecuencia">Frecuencia Cardiaca (lpm):</label>
-        <input type="number" id="frecuencia" required>
-        
-        <label for="actividad">Nivel de Actividad (1-5):</label>
-        <input type="number" id="actividad" required>
-        
-        <label for="tiempo">Tiempo de Ejercicio (min):</label>
-        <input type="number" id="tiempo" required>
-        
-        <button onclick="enviarDatos()">Detectar Fatiga</button>
-        <div class="result" id="resultado"></div>
-    </div>
-
-    <div class="progress-bar-container">
-        <div id="progress-bar" class="progress-bar"></div>
-    </div>
-    <p id="fatigue-level-text"></p> 
-
-    <div class="recomendacion-container">
-        <div id="recomendacion-icono" class="recomendacion-icono">
+    <div class="left-column">
+        <div class="profile">
+            <div class="section-title">Perfil del paciente</div>
+            <div class="profilephoto">
+                <img src="assets/css/img/profile.jpg" alt="">
+            </div>
+            <p>Nombre: Ally Celeste</p>
+            <p>Condición: Distrofia Muscular</p>
+            <p>Nivel de Fuerza Inicial: 75%</p>
+            <p>Progreso de fatiga: <span class="alert">Alta</span></p>
         </div>
-        <div id="recomendacion-texto" class="recomendacion-texto">
+        <div class="container">
+            <h3>Simulación de Detección de Fatiga Muscular</h3>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required>
+            
+            <label for="genero">Género (m/f):</label>
+            <input type="text" id="genero" required>
+            
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" required>
+            
+            <label for="altura">Altura (cm):</label>
+            <input type="number" id="altura" required>
+            
+            <label for="frecuencia">Frecuencia Cardiaca (lpm):</label>
+            <input type="number" id="frecuencia" required>
+            
+            <label for="actividad">Nivel de Actividad (1-5):</label>
+            <input type="number" id="actividad" required>
+            
+            <label for="tiempo">Tiempo de Ejercicio (min):</label>
+            <input type="number" id="tiempo" required>
+            
+            <button onclick="enviarDatos()">Detectar Fatiga</button>
+            <div class="result" id="resultado"></div>
         </div>
     </div>
 
+    <div class="right-column">
+        <div class="marcador-circular-container">
+            <div>Progreso hacia el objetivo del día</div>
+            <div class="marcador-circular">
+                <span id="porcentaje-texto">0%</span>
+            </div>
+        </div>  
+        
+        <div class="progress-bar-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <p id="fatigue-level-text"></p> 
+    
+        <div class="recomendacion-container">
+            <div id="recomendacion-icono" class="recomendacion-icono">
+            </div>
+            <div id="recomendacion-texto" class="recomendacion-texto">
+            </div>
+        </div>  
+    
+        <div class="medic-container">
+            <div class="title-section">Profesional de la salud</div>
+            <img src="assets/css/img/medico.png" alt="">        
+            <button class="send-btn">Enviar Informe Actual</button>
+        </div>    
+    </div>
 </body>
 <script src="assets/js/main.js"></script>
 </html>
